@@ -13,8 +13,8 @@ class CustomerProfile:
 # Виправлення 2 (Stamp Coupling): приймаємо лише примітиви city і weight_kg,
 # а не весь об'єкт CustomerProfile
 def calculate_delivery_cost(city: str, weight_kg: float) -> float:
-base_rate = 80.0 if city == "Kyiv" else (50.0 if city == "Ivano-Frankivsk" else 110.0)
-    return base_rate + (weight_kg * 12.0)
+    base_rate = 80.0 if city == "Kyiv" else (50.0 if city == "Ivano-Frankivsk" else 110.0)
+    return base_rate + (weight_kg * 15.0)
 
 
 # Виправлення 1 (Common Coupling): ставка податку передається явно як аргумент
